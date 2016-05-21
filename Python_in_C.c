@@ -10,7 +10,7 @@ int main(int argc, char **argv) {
   Py_Initialize();
   PyRun_SimpleString("from time import time,ctime\n"
                      "print 'Today is',ctime(time())\n");
-  // or used PyRun_SimpleFile() to run a program file
+  // or use PyRun_SimpleFile(FILE *fp, const char *filename) to run a program file
   Py_Finalize();
   return 0;
 }
