@@ -5,6 +5,8 @@
 
 #include <vector>
 
+using namespace std::vector;
+
 struct edge { int to, length; };
 
 int dijkstra(const vector< vector<edge> > &graph, int source, int target) {
